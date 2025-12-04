@@ -2,37 +2,46 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Digital Screen Italia · AI Avatar</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Ambrogio Spinola - Avatar D-ID 9:16</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      width: 100%;
       height: 100%;
+      width: 100%;
       background-color: #000;
       overflow: hidden;
-      font-family: "Segoe UI", Arial, sans-serif;
-      color: #fff;
-    }
-
-    header {
-      width: 100%;
-      text-align: center;
-      background: linear-gradient(90deg, #02131e, #033049, #02131e);
-      color: #e6faff;
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      padding: 12px 0;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 10;
-      border-bottom: 1px solid rgba(0,180,255,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     #did-agent-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      max-width: 100%;
+      aspect-ratio: 9 / 16;
+      background-color: #000;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="did-agent-container"></div>
+
+  <!-- Embed D-ID Avatar -->
+  <script type="module"
+    src="https://agent.d-id.com/v2/index.js"
+    data-mode="full"
+    data-client-key="Z29vZ2xlLW9hdXRoMnwxMDQzNzAyOTgyMjU5NjIyODUzMTc6eG9JT0RYQmEySVRpQzBrRWF2enQw"
+    data-agent-id="v2_agt_FnTSIuAc"
+    data-name="did-agent"
+    data-monitor="true"
+    data-target-id="did-agent-container">
+  </script>
+</body>
+</html>
+
+
